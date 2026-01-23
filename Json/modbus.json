@@ -1,0 +1,26 @@
+{
+  "rtu": { "baud": 9600, "parity": "N", "stop_bits": 1, "slave_id": 1 },
+  "resources": [
+    {
+      "name": "MB_ENV",
+      "fn": "read_holding",
+      "address": 0,
+      "count": 3,
+      "period_ms": 2000,
+      "fields": [
+        { "name": "temperature", "type": "float",  "index": 0, "count": 2, "endian": "little", "scale": 1 },
+        { "name": "humidity",    "type": "uint16", "index": 2, "count": 1, "endian": "little", "scale": 1 }
+      ]
+    },
+    {
+      "name": "MB_FAN_CMD",
+      "fn": "write_multiple",
+      "address": 20,
+      "count": 2,
+      "fields": [
+        { "name": "fan_speed", "type": "uint16", "index": 0, "count": 1 },
+        { "name": "fan_on",    "type": "bool",   "index": 1, "count": 1 }
+      ]
+    }
+  ]
+}

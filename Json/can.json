@@ -1,0 +1,25 @@
+{
+  "bitrate": 500000,
+  "messages": [
+    {
+      "name": "CAN_ENV",
+      "id": "0x100",
+      "dlc": 6,
+      "dir": "BOTH",
+      "fields": [
+        { "name": "temperature", "type": "float",  "offset": 0, "size": 4, "endian": "little", "scale": 1 },
+        { "name": "humidity",    "type": "uint16", "offset": 4, "size": 2, "endian": "little", "scale": 1 }
+      ]
+    },
+    {
+      "name": "CAN_CMD",
+      "id": "0x101",
+      "dlc": 3,
+      "dir": "INT2NET",
+      "fields": [
+        { "name": "fan_speed", "type": "uint16", "offset": 0, "size": 2, "endian": "little", "scale": 1 },
+        { "name": "fan_on",    "type": "bool",   "offset": 2, "size": 1, "endian": "little", "scale": 1 }
+      ]
+    }
+  ]
+}

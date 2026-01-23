@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "dir": "MB2CAN",
+      "from_modbus": { "resource": "MB_ENV" },
+      "to_can":      { "message": "CAN_ENV" },
+      "map": [
+        { "src": "temperature", "dst": "temperature" },
+        { "src": "humidity",    "dst": "humidity" }
+      ]
+    },
+    {
+      "dir": "CAN2MB",
+      "from_can": { "message": "CAN_CMD" },
+      "to_modbus":{ "resource": "MB_FAN_CMD" },
+      "map": [
+        { "src": "fan_speed", "dst": "fan_speed" },
+        { "src": "fan_on",    "dst": "fan_on" }
+      ]
+    }
+  ]
+}
