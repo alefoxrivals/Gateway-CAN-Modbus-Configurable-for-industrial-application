@@ -109,6 +109,7 @@ Il codice può essere esteso o adattato a ulteriori scenari applicativi.
 ## 👤 Autore
 
 Alessandro Alice  
-Progetto di tesi triennale – Ingegneria Informatica
+Progetto di tesi triennale – Informatica
+
 
 
