@@ -85,3 +85,30 @@ I test hanno validato il corretto funzionamento di entrambi i flussi:
 
 ## 📂 Struttura del repository
 
+/gateway
+├── src/
+├── utils/
+├── config/
+└── README.md
+
+/slave
+├── src/
+├── sd/
+└── README.md
+
+
+---
+
+## ℹ️ Note
+
+Questo repository è fornito come **supporto al progetto di tesi** e come riferimento per l’architettura adottata.  
+Il codice può essere esteso o adattato a ulteriori scenari applicativi.
+
+---
+
+## 👤 Autore
+
+Alessandro Alice  
+Progetto di tesi triennale – Ingegneria Informatica
+
+
